@@ -1,7 +1,11 @@
-section {
+body {
 	text-align: center;
 	background: url("http://Irenchita.github.io/unit_3/images/fachada_corte.jpg");
 	background-size: cover;
-	color: #0000ff;
+	color: #fff;
 	font-family: Helvetica;
+}
+
+div {
+	font-size: 20px;
 }
