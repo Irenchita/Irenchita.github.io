@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+body {
+	text-align: center;
+	background: url("http://Irenchita.github.io/unit_3/images/fachada_corte_web.jpg");
+	background-size: cover;
+}
+
+p {	
+	color: black;
+	font-family: 'Source Code Pro';
+	font-size: 18px;
+	line-height: 1.5em;
+	font-weight: 300;
+	
+}
+
+body h1 {
+	font-family: 'PerpetuaTitlingMT';
+	color: #fff;
+	margin: 1.3em;
+}
+
+em {
+	color: green;
+	font-style: inherit;
+	font-weight: 600;
+}
