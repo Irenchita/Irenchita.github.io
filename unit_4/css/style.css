@@ -1,27 +1,113 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
-body {
-	text-align: center;
-	background: url("http://Irenchita.github.io/unit_3/images/fachada_corte_web.jpg");
-	background-size: cover;
+
+* {
+	padding: 0;
+	margin: 0;	
 }
 
-p {	
-	color: black;
-	font-family: 'Source Code Pro';
-	font-size: 18px;
+a {
+	color: #1e367b;
+	text-decoration: none;	
+}
+
+body {
+	font-family:'Source Code Pro', Arial, sans-serif;
+	font-size:16px; /*1em = 16px*/
+	color: #6f6f6f;
 	line-height: 1.5em;
 	font-weight: 300;
-	
 }
 
-body h1 {
-	font-family: 'PerpetuaTitlingMT';
-	color: #fff;
+header {
+	background-color: #ffffff;	
+}
+
+nav a {
+	text-transform: uppercase;	
+	font-weight: 600;
+	letter-spacing: .5px;
+	background-color: yellow;
+	padding: 10px;
+	border: none;
+}
+
+#menu {
+	float: right;
+	margin-top: 2em;
+}
+
+#logo_BF {
+	width: 7em;
+	padding: 4px;
+	margin-top: .7em;
+	margin-left: 1em;
+}
+footer {
+	background-color: #ffffff;	
+	text-align: center;
+	padding: 20px;
+}
+
+footer a {
+	margin-right: 70px;
+}
+
+img {
+	width: 100%;
+	width: 30em;
+	margin: 1.5em;
+}
+
+hr {
+	border: none;
+	background-color: #97b545;
+	height: 2px;
+	width: 2em;
+	margin: 1em auto;
+}
+em {
+	color: #97b545;
+	font-style: italic;
+	font-weight: 600;
+	letter-spacing: .15em;
+	padding: 0 .1em;
+	background: rgba(0,0,0,.3);
+}
+
+.plantas{
+	/*width: 30em;*/
+}
+
+.generales{
+	width: 30em;
+	margin: 2em auto;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'PerpetuaTitlingMT', 'Source Code Pro', sans-serif ;
 	margin: 1.3em;
 }
 
-em {
-	color: green;
-	font-style: inherit;
-	font-weight: 600;
+h3, h4, h5 {
+	margin: 20 0;
 }
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#home {
+	text-align: center;
+	background: url("http://Irenchita.github.io/unit_3/images/fachada_corte_web.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 250px;
+	color: #fff;
+}
+
+
+
