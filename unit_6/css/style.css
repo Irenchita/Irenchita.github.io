@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+header nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+}
+
+a {
+	background-color: #FFED74;
+	padding: 15px;
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	background-color: #ccc;
+}
+
+nav {
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+	color: #000;
+}
+
+aside {
+	background-color: #FFC675;
+	border: 1px black solid;
+}
+
+article {
+	background-color: #E89C6C;
+	border: 1px black solid;
+}
+
+footer {
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+div, section {
+	background-color: #FFE2B8;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+.two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px
+}
+
+#preventa {
+	width: 100%;
+	margin: auto;
+}
+
+#logo_BF {
+	width: 7em;
+}
+
+#home{
+	text-align: center;
+	background: url("http://Irenchita.github.io/unit_6/images/fachada_corte_web.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 250px;
+	color: #fff;
+}
+
+#left_samsara {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+}	
+
+#right_samsara {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 62%;
+}
+
+#left_areas {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 62%;
+}	
+
+#right_areas {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 30%;
+}
+
+#PB {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#PA {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#RG {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#left_galeria {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 30%;
+}	
+
+#right_galeria {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 62%;
+}
+
+#fam {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#ubica {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#contacto {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#info {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 29%;
+	display: inline-block;
+}
+
+#social_media{
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 20%;
+	display: inline-block;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+img {
+	margin: auto;
+	width: 350px;
+}	
