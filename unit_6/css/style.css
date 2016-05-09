@@ -207,6 +207,5 @@ div, section {
 }
 
 img {
-	margin: auto;
-	width: 350px;
+	width: 100%;
 }	
