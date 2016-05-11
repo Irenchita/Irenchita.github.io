@@ -1,34 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
-
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+	color: rgba(0,0,0,.54);
+	font-size:16px;
+}
 header {
-	background-color: #FFED74;
-	border: 1px black solid;
 	padding: 20px;
 }
 
 header nav {
-	background-color: #E8C66A;
-	border: 1px black solid;
 	padding: 20px;
 	float: right;
 }
 
-a {
-	background-color: #FFED74;
+nav a {
 	padding: 15px;
 	text-decoration: none;
-	color: #000;
+	color: inherit;
 }
 
 a:hover {
 	background-color: #ccc;
 }
-
+#home a {
+	background:purple;
+	color:inherit;
+	display:inline-block;
+	margin:.5em;
+	padding:1em 2em;
+	text-decoration:none;
+}
 nav {
-	background-color: #E8C66A;
-	border: 1px black solid;
 	padding: 20px;
-	color: #000;
 }
 
 aside {
@@ -42,21 +45,11 @@ article {
 }
 
 footer {
-	background-color: #FF957E;
-	border: 1px black solid;
 	padding: 20px;
 }
 
 div, section {
-	background-color: #FFE2B8;
-	border: 1px black solid;
 	padding: 20px;
-}
-
-.two_column {
-	background-color: #FFB7CF;
-	border: 1px black solid;
-	padding: 20px
 }
 
 #preventa {
@@ -79,11 +72,9 @@ div, section {
 }
 
 #left_samsara {
-	background-color: #E582A2;
-	border: 1px black solid;
 	padding: 20px;
 	float: left;
-	width: 30%;
+	width: 33.33%;
 }	
 
 #right_samsara {
@@ -91,7 +82,7 @@ div, section {
 	border: 1px black solid;
 	padding: 20px;
 	float: right;
-	width: 62%;
+	width: 66.66%;
 }
 
 #left_areas {
