@@ -6,41 +6,53 @@
 	box-sizing: border-box;
 }
 
-#logo_BF {
-	width: 17%;
-	float: left;
-	padding: 1em 2em 0em 2em;
-}
-#samsara{
-	font-style: bold;
-	font-size: 1.2em;
+header {
+	width: 100%;
+	padding: 1em;
 }
 
-#folleto{
-	font-size: 1.1em;
-	color: rgb(98,98,98);
+#logo_BF {
+	width: 15%;
+	float: left;
 }
 
 nav {
-	float: right;
-	padding: 3em 2em;
 	width: 80%;
+	float: left;
+	margin-top: 3em;
 	color: rgb(20,60,106);
 }
 
-nav a{
-	padding: 2em;
+nav a {
+	padding: .5em;
+	margin: .2em 1.5em;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 }
 
-nav a:hover{
+nav a:hover {
 	color: rgb(98,98,98);
 }
 
-a{
+a {
 	text-decoration: none;
+}
+
+
+#samsara{
+	font-style: bold;
+	font-size: 1.3em;
+}
+
+#folleto{
+	font-size: .9em;
+	color: rgb(98,98,98);
+	line-height: 1em;
+}
+
+#preventa {
+	float: right;
 }
 
 body {
@@ -59,29 +71,22 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-	padding: 1em 0em;
-}
-
-h3 {
+	margin-top: 1em;
+	padding: .5em 0em;	
 	text-transform: uppercase;
 	color: rgb(20,60,106);
 }
 
 section{
-	margin-top:2em;
+	margin-top:1em;
 }
 
 hr {
 	width: 2em;
-	margin: 1em auto;
+	margin: .5em auto;
 	border: none;
 	background-color: rgb(151,181,69);
-	height: .15em;
-}
-
-#preventa {
-	float: right;
-	margin-top: -7em;
+	height: .1em;
 }
 
 #home{
@@ -135,11 +140,11 @@ ul {
 	padding: 0;
 }
 
+
 #left_samsara {
 	padding: 1em;
 	float: left;
 	width: 35%;
-	margin-top: 1em;
 }	
 
 #right_samsara {
@@ -160,7 +165,11 @@ ul {
 	width: 35%;
 	margin-top: 1em;
 }
-
+.length{
+	width: 30em;
+	text-align: center;
+	margin: auto;
+}
 #PB {
 	padding: 1em;
 	float: left;
