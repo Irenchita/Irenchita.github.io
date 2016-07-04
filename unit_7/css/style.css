@@ -22,19 +22,19 @@
 header {
 	width: 100%;
 	padding: .5em;
-	margin: 1em;	
+	height: 7em;
 }
 
 #logo_BF {
-	width: 8em;
+	width: 8%;
 	float: left;
+	margin: 1em 0 0 1em;
 }
 
 nav {
 	font-family: 'perpetua', 'antipasto', sans-serif;
-	width: 70%;
-	float: left;
-	margin-left: 12em;
+	width: 90%;
+	float: right;
 	margin-top: 2em;
 	color: rgb(20,60,106);
 }
@@ -69,7 +69,6 @@ a {
 }
 
 #wrapper{
-	width:80%;
 	margin: auto;
 }
 
@@ -81,19 +80,12 @@ body {
 	line-height: 1.5em;
 	text-align: center;
 	letter-spacing: .15em;
-}
-
-#border_home h1 {
-	font-family: 'perpetua', 'antipasto', sans-serif;
-	padding: 1.3em 0em;
-	font-size: 2.2em;
-	text-transform: uppercase;
-	color: rgb(255,255,255);
+	background-color: rgba(98,98,98,.1);
 }
 
 h1, h3{
 	font-family: 'perpetua', 'antipasto', sans-serif;
-	margin-top: 1em;
+	margin-top: .5em;
 	padding: .5em 0em;	
 	text-transform: uppercase;
 	color: rgb(20,60,106);
@@ -123,11 +115,21 @@ hr {
 	color: rgb(255,255,255);
 	line-height: 2em;
 	text-shadow: .05em .05em rgb(98,98,98);
+	height: 37.5em;
 }
 
 #border_home{
 	background-color: rgba(0,0,0,0.19);
 	padding: 8em 5em;
+	height: 37.5em;
+}
+
+#border_home h1 {
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	padding: 1.3em 0em;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
 }
 
 #home h2{
@@ -144,9 +146,9 @@ hr {
 	padding: .5em 1.5em;
 	text-shadow: none;
 	text-transform: uppercase;
-	letter-spacing: .12em;
+	letter-spacing: .1em;
+	font-size: 1.5em;
 }
-
 
 em {
 	color: rgb(151,181,69);
@@ -157,107 +159,150 @@ em {
 	text-transform: uppercase;
 }
 
+.section {
+	height: 30em;
+	background-color: rgba(98,98,98,.05);
+	margin: auto;
+	width: 100%;
+	padding: 3em;
+}	
+
+#left_samsara {
+	padding: 2.5em;
+	float: left;
+	width: 30%;
+	margin: 0 0 0 7em;
+}	
+
+#right_samsara {
+	float: right;
+	width: 45%;
+	margin: 0 7em 0 0;
+	padding: 1em;
+}
+
+#left_areas {
+	float: left;
+	width: 50%;
+	margin: 0 0 0 4em;
+}	
+
+#right_areas {
+	float: right;
+	width: 35%;
+	margin: 0 5em 0 0;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-
-#left_samsara {
-	padding: 1em;
-	float: left;
-	width: 35%;
-}	
-
-#right_samsara {
-	padding: 1em;
-	float: right;
-	width: 65%;
+#section_2{
+	height: 54em;
+	background-color: rgb(255,255,255);
+	margin: auto;
+	width: 100%;
+	padding: 2em;
 }
 
-#left_areas {
-	padding: 1em;
-	float: left;
-	width: 65%;
-}	
-
-#right_areas {
-	padding: 1em;
-	float: right;
-	width: 35%;
-	margin-top: 1em;
-}
 .length{
-	width: 30em;
+	width: 35em;
 	text-align: center;
 	margin: auto;
+}
+
+.img_flor{
+	margin-top: -.2em;
+	width: 20%;
 }
 
 #PB {
 	padding: 1em;
 	float: left;
-	width: 33%;
-	display: inline-block;
-	margin: auto;
+	width: 30%;
+	margin-left: 4em;
 }
 
 #PA {
 	padding: 1em;
 	float: left;
-	width: 33%;
-	display: inline-block;
+	width: 30%;
 }
 
 #RG {
 	padding: 1em;
 	float: left;
-	width: 33%;
-	display: inline-block;
+	width: 30%;
 }
 
-#galeria {
-	padding: 1em;
-	width: 90%;
-	margin: 1em auto;
+#section_3{
+	height: 45em;
+/*	background-color: rgba(98,98,98,.05);*/
+	background-color: rgba(255,255,255,.7);
+	margin: auto;
+	width: 100%;
+	padding: 2em;
+}
+
+.galeria {
+	padding: .2em;
+	width: 15%;
+	margin: 4em .5em;
 	float: left;
-	display: inline-block;
+	background-color: rgba(98,98,98,.3);
 }
 
-#ventas{
-	display: inline-block;
-	width: 98%;
-}
-
-#fam {
-	float: left;
-	width: 32%;
-	margin:.5em;
+#section_contacto{
+	height: 27em;
+	margin: auto;
+	width: 100%;
+	padding: 2em;
+	background: url("http://Irenchita.github.io/unit_6/images/rooftop.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 #maps {
 	float: left;
-	width: 32%;
+	width: 60%;
+}
+
+#maps_size{
+	width: 32em;
+	height: 20em;
 }
 
 #contacto {
 	float: left;
-	width: 33%;
-}
-
-#info {
-	padding: 1em;
-	float: left;
-	width: 70%;
-	display: inline-block;
-}
-
-#social_media{
-	padding: 1em;
-	float: right;
 	width: 30%;
-	display: inline-block;
 }
+
+footer {
+	padding: 1em;
+	border-top: .2em solid #ccc;
+	background-color: rgb(255,255,255);
+}
+
+#privacidad{
+	float: left;
+	width: 15%;
+	margin: 1em 0 0 10em;
+}
+
+.iconos{
+	width: 50%;
+	float: right;
+}
+
+.img_iconos{
+	width: 3em;
+	height: 3em;
+	margin: 0 1em 0 1.5em;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -271,12 +316,3 @@ img {
 	width: 100%;
 }	
 
-.img_flor{
-	margin-top: 0em;
-	width: 40%;
-}
-
-footer {
-	padding: 1em;
-	background-color: #ccc;
-}
