@@ -19,51 +19,46 @@
 	box-sizing: border-box;
 }
 
-header {
-	width: 100%;
-	padding: .5em;
-	height: 7em;
-}
-
 #logo_BF {
-	width: 8%;
+	width: 10%;
 	float: left;
-	margin: 1em 0 0 1em;
+	padding: 1em;
 }
 
 nav {
-	font-family: 'perpetua', 'antipasto', sans-serif;
-	width: 90%;
-	float: right;
-	margin-top: 2em;
-	color: rgb(20,60,106);
-	/*background-color: orange;*/
-	padding: .5em;
+	width: 80%;
+	float: left;
+	padding: 1.5em;
+	text-align: center;
 }
 
 nav a {
-	padding: .5em;
-	margin: .2em 1em;
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	color: rgb(20,60,106);
+	padding: 1em;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: .1em;
-	font-size: 1.3em;
-	/*background-color: blue;*/
-}
-
-nav a:hover {
-	color: rgb(98,98,98);
+	font-size: 1.2em;
 }
 
 a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	color: rgb(151,181,69);
+}
+
+
 #folleto{
 	font-size: .9em;
-	color: rgb(98,98,98);
 	line-height: 1em;
+}
+
+#folleto:hover {
+	background-color: rgb(20,60,106);
 }
 
 #preventa {
@@ -161,22 +156,48 @@ em {
 	text-shadow: rgb(98,98,98);
 	text-transform: uppercase;
 }
-
-.foto_samsara {
-	width: 70%;
-	margin-top: 1em;
+.section_samsara{
+	margin-top: 2em;
+	padding: 0 3em;
+	margin-bottom: 1em;
+}
+p {
+	text-align: justify;
+}
+#text_samsara {
+	width: 45%;
+	float: left;
+	padding: 1em;
+	/*background-color: orange;*/
+}
+#foto_samsara {
+	width: 55%;
+	float: right;
 }	
-
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#text_areas{
+	width: 45%;
+	float: right;
+	padding: 0 1em;
+}
+#foto_areas{
+	width: 55%;
+	float: left;
 }
 .length{
 	width: 47%;
 	text-align: center;
 	margin:auto;
 	padding-top: 2em;
+}
+
+.not_justify{
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 #section_plantas{
@@ -228,7 +249,6 @@ ul {
 }
 
 #section_contacto{
-	height: 27em;
 	margin: auto;
 	width: 100%;
 	padding: 2em;
@@ -250,13 +270,18 @@ ul {
 
 #contacto {
 	float: left;
-	width: 30%;
+	width: 40%;
 }
 
 footer {
-	padding: 1em;
-	border-top: .2em solid #ccc;
-	background-color: rgb(255,255,255);
+	padding: 2em;
+	background-color: #000;
+}
+
+footer p{
+	text-align: center;
+	color: #fff;
+	font-size: .8em;
 }
 
 #privacidad{
@@ -277,62 +302,300 @@ img {
 	width: 100%;
 }
 
+.img_planta{
+	margin-top: -.7em;
+}
+
 #mobile {
 	display: none;
 }
 
+@media only screen and (max-width: 1550px) {
+	
+	#text_samsara p{
+		line-height: 3em;
+	}
+	#text_areas p{
+		line-height: 2em;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	#logo_BF {
+		width: 11%;
+	}
+	nav {
+		width: 79%;
+	}
+	#text_areas{
+		font-size: .8em;
+	}
+	#text_samsara{
+		font-size: .9em;
+	}
+	
+	#text_samsara, #text_areas{
+		width:47%;
+	}
+	#foto_samsara, #foto_areas{
+		width: 53%;
+	}
+	.section_samsara{
+		padding: 0 2em;
+	}
+}
 
 @media only screen and (max-width: 1090px) {
+	#logo_BF {
+		width: 12%;
+	}
+	nav {
+		width: 78%;
+	}
 	nav a {
-		margin: .2em .7em;
 		font-size: 1em;
 	}
 	.length{
 		width: 60%;
 		font-size: .9em;
 	}
+	#text_samsara, #text_areas{
+		width:50%;
+		font-size: .8em;
+	}
+	#foto_samsara, #foto_areas{
+		width: 50%;
+	}
+	.section_samsara{
+		padding: 0 .7em;
+	}
+	li {
+		display: inline-block;
+		margin: 0 .5em;
+	}
 }
 
 
+@media only screen and (max-width: 950px) {
+	#logo_BF {
+		width: 13%;
+	}
+	nav {
+		width: 77%;
+	}
+	#text_areas>p:nth-of-type(1) {
+		display: none;
+	}
+	#text_samsara{
+		padding: 0 1em;
+	}
+	#maps_size{
+		width: 25em;
+		height: 20em;	
+	}
+}
+
 @media only screen and (max-width: 850px) {
+	#logo_BF {
+		width: 14%;
+	}
+	nav {
+		width: 76%;
+	}
 	nav a {
-		margin: .2em .1em;
+		font-size: .9em;
+	}
+	#folleto{
 		font-size: .8em;
+	}
+	
+	#preventa {
+		margin-top: .05em;
+	}
+	main{
+		margin-top: 1em;
+	}
+	#border_home{
+		padding: 6em 5em;
 	}
 	.length{
 		width: 70%;
 		font-size: .8em;
-	}
-	.foto_samsara {
-		width: 80%;
 	}	
+	hr {
+		margin:auto;
+	}
 
+	#text_samsara, #text_areas{
+		width:51%;
+		font-size: .75em;
+		line-height: 2em;
+	}
+
+	#text_samsara p{
+		line-height: 2em;
+	}	
+	
+	#foto_samsara, #foto_areas{
+		width: 49%;
+	}
 }
 
+@media only screen and (max-width: 768px) {
+	#logo_BF {
+		width: 15%;
+	}
+	nav {
+		width: 75%;
+	}
+	nav a {
+		font-size: .8em;
+	}
+	#folleto{
+		font-size: .7em;
+	}
+	 
+	main {
+		margin-top: .5em;
+	}
+	#text_samsara, #text_areas{
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
 
-@media only screen and (max-width: 665px) {
+	p{
+		text-align: center;
+	}
+	#foto_samsara, #foto_areas{
+		float: none;
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+	}
+	#PB, #PA, #RG {
+		font-size: .9em;
+		padding: .1em 0em;	
+	}
+	#maps_size{
+		width: 18em;
+		height: 15em;	
+	}
+	#maps {
+		width: 50%;
+	}
+
+	#contacto {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 680px) {
+	
+	nav{
+		padding: .5em;
+		width: 60%;
+	}
+	#logo_BF{
+		width: 18%;
+	}
+	nav a {
+		display: none;
+	}
+	#mobile {
+		display: block;
+	}
+	nav:hover a{
+		display: block;
+	}
+	#preventa {
+		margin-top: .1em;
+	}
+	
+	main {
+		margin-top: 1.1em;
+	}
+	#home, #border_home{
+		height: 23em;	
+	}
+	#border_home{
+		padding: 4em 5em;
+	}
+	#home a {
+		margin: 1.1em;
+		padding: .3em 1em;
+		font-size: 1.1em;
+	}
+
+	#border_home h1 {
+		margin-top: 0;
+		padding: .5em 0;
+		font-size: 1.3em;
+		line-height: 1.1em;
+	}
+
+	#home h2{
+		margin-top: .5em;
+		font-size: 1em;
+		line-height: 1em;
+	}
 	#PB, #PA, #RG{
 		float: none;
-		width: 60%;
+		width: 50%;
 		margin: auto;
 	}
 	.length{
 		width: 80%;
 		font-size: .8em;
 	}
-	.foto_samsara {
-		width: 90%;
+	#section_plantas p{
+		display: none;
 	}
-	#border_home h1 {
-		padding: 1.3em 0em;
-		font-size: 2em;
+	#PB, #PA, #RG {
+		font-size: .8em;
+		padding: .1em 0em;	
 	}
-
-	#home h2{
-		font-size: 1.5em;
+	#section_galeria h3 {
+		font-size: 1em;
+	}
+	#maps_size{
+		width: 12em;
+		height: 10em;	
 	}
 
 }
 
+@media only screen and (max-width: 450px){
+	#home, #border_home{
+		height: 22em;	
+	}
+	#home a {
+		margin: .8em;
+		padding: .3em 1em;
+		font-size: 1em;
+	}
 
+	#border_home h1 {
+		font-size: 1.1em;
+		line-height: 1.3em;
+	}
+	#home h2{
+		margin-top: .5em;
+		font-size: .9em;
+		line-height: .9em;
+	}
+	footer {
+		font-size: .7em;
+	}
+	#maps {
+		float: none;
+		width: 100%;
+	}
 
+	#maps_size{
+		width: 13em;
+		height: 11em;
+	}
+
+	#contacto {
+		display: none;
+	}
+}
