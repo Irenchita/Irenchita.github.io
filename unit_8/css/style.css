@@ -19,6 +19,15 @@
 	box-sizing: border-box;
 }
 
+#section_header {
+	position: fixed;
+	height: 6em;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
+	top: 0;
+}
+
 #logo_BF {
 	width: 10%;
 	float: left;
@@ -26,10 +35,12 @@
 }
 
 nav {
-	width: 80%;
+	width: 60%;
 	float: left;
 	padding: 1.5em;
 	text-align: center;
+	border-bottom: .05em solid rgb(151,181,69);
+	/*background-color: yellow;*/
 }
 
 nav a {
@@ -61,6 +72,36 @@ nav a:hover {
 	background-color: rgb(20,60,106);
 }
 
+#section_samsara{
+	width: 20%;
+	margin: auto;
+	margin-top: -1em;
+	margin-bottom: 1.5em;
+}
+
+#logo_samsara {
+	width: 50%;
+}
+
+/*#hr_samsara{
+	width: 30%;
+	height: .05em;
+}*/
+
+#samsara_flor{
+	width: 25%;
+	margin-top: -1em;
+}
+
+/*#samsara_flor{
+	width: 25%;
+	margin-top: -.3em;
+}*/
+
+/*#hr_flor{
+	margin-top: -1.5em;
+}*/
+
 #preventa {
 	float: right;
 	margin-top: -1em;
@@ -78,7 +119,9 @@ body {
 	line-height: 1.5em;
 	text-align: center;
 	letter-spacing: .15em;
-	background-color: rgba(98,98,98,.1);
+	/*background-color: rgba(98,98,98,.1);*/
+	padding-top: 6.5em;
+	background-color: #fff;
 }
 
 h1, h3{
@@ -233,36 +276,19 @@ ul {
 }
 
 #section_galeria{
-/*	background-color: rgba(98,98,98,.05);*/
 	background-color: rgba(255,255,255,.7);
 	margin: auto;
 	width: 100%;
-	padding: 2em;
-}
-
-.fancybox_wrap{
-	position: relative;
+	padding: 2em 0;
 }
 
 .galeria {
-	padding: .2em;
-	width: 15%;
-	margin: 4em .5em;
+	padding: .1em;
+	width: 25%;
+	margin-top: 2em;
 	float: left;
-	background-color: rgba(98,98,98,.3);
+	/*background-color: rgba(98,98,98,.3);*/
 	position: relative;
-}
-
-.galeria + p {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: none;
-	z-index:2000;
-}
-
-.galeria:hover + p{
-	display: block;
 }
 
 #section_contacto{
