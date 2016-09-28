@@ -41,22 +41,23 @@
 }
 
 nav {
-	width: 60%;
+	width: 65%;
 	float: left;
-	padding: 1.5em;
+	padding: 1.3em;
 	text-align: center;
-	/*background-color: yellow;*/
+/*	background-color: yellow;*/
 }
 
 nav a {
 	font-family: 'perpetua', 'antipasto', sans-serif;
 	color: rgb(20,60,106);
-	padding: 1em;
+	padding: .7em;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	letter-spacing: .1em;
 	font-size: 1.2em;
+/*	background-color: grey;*/
 }
 
 a {
@@ -70,42 +71,54 @@ nav a:hover {
 
 #folleto{
 	font-size: .9em;
-	line-height: 1em;
+	color: #97b545;
 }
 
 #folleto:hover {
-	background-color: rgb(20,60,106);
+	background-color: #ccc;
+	border-radius: .5em;
 }
+#contacto_nav{}
 
 #contact_header{
 	background-color: #97b545;
-	width: 23%;
+	width: 18%;
 	float: left;
-	padding: 1em .5em;
+	padding: .5em .2em;
+	margin-top: .5em;
 }
 
 #text{
-	width: 40%;
-	/*background-color: orange;*/
+	width: 50%;
+/*	background-color: orange;*/
 	color: #fff;
 	float: left;
-	padding: .1em;
-	font-size: 1.2em;
+	padding: .15em;
+	font-size: 1.1em;
 }
 #envelope{
-	width: 30%;
+	width: 25%;
 /*	background-color: yellow;*/
 	float: left;
-}
-#phone{
-	width: 30%;
-	/*background-color: blue;*/
-	float: left;
+	margin-top: .1em;
 }
 
-.icons{
- 	width: 50%;
- 	/*background-color: pink;*/
+#phone{
+	width: 25%;
+/*	background-color: blue;*/
+	float: left;
+	margin-top: .1em;
+	margin-left: -.1em;
+}
+
+#icon_tel{
+ 	width: 47%;
+/* 	background-color: pink;*/
+}
+
+#icon_envelope{
+ 	width: 70%;
+/* 	background-color: pink;*/
 }
 
 #social{
@@ -117,6 +130,141 @@ nav a:hover {
 #icon_social{
 	width: 50%
 }
+
+#box{
+	position: relative;
+	/*background-color: #ccc;*/
+	background-color: rgba(0,0,0,0.19);
+	/*text-align: center;*/
+	width: 100%;
+	display: none;
+	/*margin-top: 0%;*/
+}
+
+#mail{
+	position: fixed;
+	/*background-color: rgb(20,60,106);*/
+	background-color: #ccc;
+	/*background-color: #000;*/
+	text-align: center;
+	width: 50%;
+	padding: .7em .5em 1em .5em;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 25%;
+	/*color: #fff;*/
+	color: #000;
+	/*color: rgb(20,60,106);*/
+	margin-top: 8%;
+}
+
+#tel{
+	position: fixed;
+	/*background-color: rgb(20,60,106);*/
+	background-color: #ccc;
+	/*background-color: #000;*/
+	text-align: center;
+	width: 30%;
+	padding: .7em .5em 1em .5em;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 35%;
+	/*color: #fff;*/
+	color: #000;
+	/*color: rgb(20,60,106);*/
+	margin-top: 8%;
+}
+#mail input{
+	display: block;
+	width: 70%;
+	margin: auto;
+	padding: .5em;
+	margin-top: .7em;
+	/*border: 1px solid #fff;*/
+	border: 1px solid #ccc;
+	border-radius: .5em;
+	background-color: #fff;
+	color: #000;
+	line-height: 1.5em;
+}
+
+#mail input[type="submit"] {
+ /*   background-color: #000;*/
+    background-color: #97b545;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #ccc;
+    }
+
+#mail p{
+	margin: auto;
+	text-align: center;
+	width: 75%;
+	padding: .5em;
+	font-size: 1.5em;
+}
+
+#mail span, #tel span{
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	background-color: rgb(98,98,98);
+	/*background-color: #000;*/
+	padding: .7em;
+	right: -.8em;
+	margin-top: -1.7em;
+	border: 2px solid #fff;
+	border-radius: 2em;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+#img_tel_box{
+ 	width: 53%;
+ 	/*background-color: pink;*/
+}
+
+#icon_tel_box{
+	float: left;
+	width: 40%;
+}
+
+#tel a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.9em;
+	/*background-color: blue;*/
+	margin-top: .7em;
+	float: left;
+	margin-left: -1.1em;
+}
+
+#tel p {
+	float: left;
+	width: 40%;
+	margin-top: 1em;
+	text-align: right;
+	font-size: .9em;
+	/*background-color: yellow;*/
+}
+
+#tel button[type="button"] {
+    /*background-color: #000;*/
+    background-color: #97b545;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    padding: 1em;
+    cursor: pointer;
+    float: left;
+    margin-left: .7em;
+    margin-top: .7em;
+    }
 
 #section_samsara{
 	width: 28%;
@@ -279,6 +427,14 @@ ul {
 .text_blue{
 	color: rgb(20,60,106); 
 }
+
+#lista_areas{
+	display: none;
+	color: rgb(151,181,69);
+	margin: auto;
+	text-align: center;
+}
+
 #section_plantas{
 	background-color: rgb(255,255,255);
 	margin: auto;
@@ -336,6 +492,7 @@ ul {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-color: rgba(0,0,0,0.19);
 }
 
 #maps {
@@ -352,19 +509,84 @@ ul {
 	float: left;
 	width: 40%;
 }
-#contacto_datos{
-	display: block;
+
+#box_datos {
+	padding: 1em;
+	color: #000;
 }
 
-footer {
-	padding: 2em;
-	background-color: #000;
+#box_datos input{
+	display: block;
+	width: 70%;
+	margin: auto;
+	padding: .7em;
+	margin-top: .5em;
+	border: 1px solid #ccc;
+	border-radius: .5em;
+	background-color: rgba(0,0,0,0.19);
 }
+
+#box_datos p{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+}
+#box_datos input[type="submit"] {
+    background-color: #ccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
 
 footer p{
 	text-align: center;
 	color: #fff;
 	font-size: .8em;
+	padding: 2em;
+	background-color: #000;
+}
+
+#mobile_footer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	bottom: 0;
+	border-top: .1em solid #ccc;
+	padding: .5em;
+	background-color: #000;
+}
+
+#envelope_foot{
+	width: 33%;
+/*	background-color: yellow;*/
+	float: left;
+}
+
+#phone_foot{
+	width: 33%;
+/*	background-color: blue;*/
+	float: left;
+}
+
+#whats{
+	width: 33%;
+/*	background-color: grey;*/
+	float: left;
+}
+
+#icon_tel_f{
+ 	width: 19%;
+/* 	background-color: pink;*/
+}
+
+#icon_envelope_f{
+ 	width: 25%;
+/* 	background-color: pink;*/
+}
+
+#icon_whats{
+	width: 21%;
+/* 	background-color: pink;*/
 }
 
 #privacidad{
@@ -391,6 +613,7 @@ img {
 
 #mobile {
 	display: none;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -403,12 +626,27 @@ img {
 	}
 }
 @media only screen and (max-width: 1301px) {
-	#logo_BF {
-		width: 11%;
-	}
+	
 	nav {
-		width: 79%;
+		padding: 1em;
 	}
+
+	nav a {
+		font-size: 1em;
+	}
+
+	#contact_header{
+		width: 20%;
+	}
+
+	#social {
+		width: 5%;
+	}
+
+	#icon_social {
+		width: 80%;
+	}
+
 	#text_areas{
 		font-size: .8em;
 	}
@@ -422,21 +660,37 @@ img {
 	#foto_samsara, #foto_areas{
 		width: 53%;
 	}
-	.section_samsara{
-		padding: 0 2em;
+	
+	#samsara_flor{
+		margin-top: -1.3em;
+	}
+	#section_galeria{
+	padding: 5em 5em;
 	}
 }
 
 @media only screen and (max-width: 1090px) {
-	#logo_BF {
-		width: 12%;
-	}
-	nav {
-		width: 78%;
-	}
+
 	nav a {
-		font-size: 1em;
+		font-size: .9em;
+		padding: .4em;
 	}
+	#icon_BF{
+		width: 75%;
+	}
+
+	#text{
+		font-size: .9em;
+	}
+
+	#icon_tel{
+	 	width: 55%;
+	}
+
+	#icon_envelope{
+	 	width: 75%;
+	}
+
 	.length{
 		width: 60%;
 		font-size: .9em;
@@ -451,19 +705,36 @@ img {
 	.section_samsara{
 		padding: 0 .7em;
 	}
-	li {
-		display: inline-block;
-		margin: 0 .5em;
+	
+	ul {
+		display: none;
+	}
+
+	#lista_areas{
+		display: block;
+	}
+
+	#samsara_flor{
+		margin-top: -1.1em;
+	}
+	#section_galeria{
+	padding: 5em 4em;
 	}
 }
 
 
 @media only screen and (max-width: 950px) {
-	#logo_BF {
-		width: 13%;
-	}
 	nav {
-		width: 77%;
+		width: 63%;
+	}
+	#contacto_nav{
+		display: none;
+	}
+	#contact_header{
+		width: 22%;
+	}
+	#icon_social{
+		width: 90%;
 	}
 	#text_areas>p:nth-of-type(1) {
 		display: none;
@@ -478,22 +749,14 @@ img {
 }
 
 @media only screen and (max-width: 850px) {
-	#logo_BF {
-		width: 14%;
+	
+	#icon_BF{
+		width: 90%;
 	}
-	nav {
-		width: 76%;
-	}
-	nav a {
-		font-size: .9em;
-	}
-	#folleto{
+	#text{
 		font-size: .8em;
 	}
-	
-	#preventa {
-		margin-top: .05em;
-	}
+
 	main{
 		margin-top: 1em;
 	}
@@ -521,22 +784,29 @@ img {
 	#foto_samsara, #foto_areas{
 		width: 49%;
 	}
+	#samsara_flor{
+		margin-top: -1.1em;
+	}
+	#section_galeria{
+	padding: 5em 4em;
+	}
 }
 
-@media only screen and (max-width: 768px) {
-	#logo_BF {
-		width: 15%;
+@media only screen and (max-width: 774px) {
+
+	#logo_BF{
+		width: 11%;
 	}
 	nav {
-		width: 75%;
+		width: 60%;
 	}
-	nav a {
-		font-size: .8em;
+	#social{
+		width: 7%;
 	}
-	#folleto{
+
+	nav a{
 		font-size: .7em;
 	}
-	 
 	main {
 		margin-top: .5em;
 	}
@@ -549,6 +819,7 @@ img {
 	p{
 		text-align: center;
 	}
+
 	#foto_samsara, #foto_areas{
 		float: none;
 		width: 80%;
@@ -561,7 +832,7 @@ img {
 	}
 	#maps_size{
 		width: 18em;
-		height: 15em;	
+		height: 18em;	
 	}
 	#maps {
 		width: 50%;
@@ -570,37 +841,53 @@ img {
 	#contacto {
 		width: 50%;
 	}
-}
-@media only screen and (max-width: 680px) {
+	#section_galeria{
+	padding: 4em 3em;
+	}
 	
-	nav{
-		padding: .5em;
-		width: 60%;
-	}
+}
+@media only screen and (max-width: 715px) {
+	
 	#logo_BF{
-		width: 18%;
+		width: 12%;
 	}
+	nav {
+		width: 80%;
+	}
+	#social{
+		width: 8%;
+	}
+	
 	nav a {
+		display: none;
+	}
+
+	nav:hover a{
+		display: block;
+	}
+	#contact_header{
 		display: none;
 	}
 	#mobile {
 		display: block;
 	}
-	nav:hover a{
+
+	#mobile_footer{
 		display: block;
 	}
-	#preventa {
-		margin-top: .1em;
+
+	footer p{
+		display: none;
 	}
-	
+
 	main {
 		margin-top: 1.1em;
 	}
 	#home, #border_home{
-		height: 23em;	
+		height: 20em;	
 	}
 	#border_home{
-		padding: 4em 5em;
+		padding: 4em 3em;
 	}
 	#home a {
 		margin: 1.1em;
@@ -609,7 +896,7 @@ img {
 	}
 
 	#border_home h1 {
-		margin-top: 0;
+		margin-top: 1.5em;
 		padding: .5em 0;
 		font-size: 1.3em;
 		line-height: 1.1em;
@@ -639,9 +926,17 @@ img {
 	#section_galeria h3 {
 		font-size: 1em;
 	}
-	#maps_size{
-		width: 12em;
-		height: 10em;	
+	#maps {
+		float: none;
+		width: 100%;
+	}
+
+	#contacto {
+		display: none;
+	}
+	
+	#section_galeria{
+	padding: 4em 2em;
 	}
 
 }
@@ -650,6 +945,7 @@ img {
 	#home, #border_home{
 		height: 22em;	
 	}
+
 	#home a {
 		margin: .8em;
 		padding: .3em 1em;
@@ -662,23 +958,13 @@ img {
 	}
 	#home h2{
 		margin-top: .5em;
-		font-size: .9em;
-		line-height: .9em;
+		font-size: .8em;
+		line-height: 1.1em;
 	}
-	footer {
-		font-size: .7em;
-	}
-	#maps {
-		float: none;
-		width: 100%;
+	
+	#section_galeria{
+	padding: 4em 1em;
 	}
 
-	#maps_size{
-		width: 13em;
-		height: 11em;
-	}
 
-	#contacto {
-		display: none;
-	}
 }

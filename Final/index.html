@@ -27,20 +27,63 @@
 				<a href="#section_samsara">Samsara</a>
 				<a href="#section_plantas">Distribución</a>
 				<a href="#section_galeria">Galeria</a>
-				<a href="#section_contacto">Contacto</a>
+				<a href="#section_contacto" id="contacto_nav">Contacto</a>
 				<a href="images/Samsara_ElCondado_Qro.pdf" download id="folleto">Descarga Folleto</a>
 			</nav>
 
 			<div id="contact_header" class="clearfix">
 				<span id="text">Llámanos!</span>
-				<a href="#" id="envelope"> <img src="images/icons/glyphicons-11-envelope.png" class="icons"></a>
-				<a href="#" id="phone"> <img src="images/icons/glyphicons-11-envelope.png" class="icons"></a>
+				<a href="#" id="envelope"> <img src="images/icons/email.png" id="icon_envelope"></a>
+				<a href="#" id="phone"> <img src="images/icons/phone.png" id="icon_tel"></a>
 			</div>	
 			<div id="social">
 					<a href="#"> <img src="images/icons/facebook.png" id="icon_social"></a>
 			</div>
 		</header>
 		
+		<div id="box">
+			<div id="tel">
+				<span>x</span>
+				<div class="clearfix">
+					<div id="icon_tel_box"><img src="images/icons/phone.png" id="img_tel_box"></div>
+					<a href="tel:+5215543688282">5543688282</a>
+				</div>	
+				<p>O escríbenos</p>
+				<button type="button">Correo</button>
+				
+			</div>
+			<div id="mail">
+				<span>x</span>
+				<p>Hola! Nuestros asesores se pondrán en contacto :)</p>
+				<div>
+					<form action="">
+						<input type="text" name="name" value="" placeholder="Nombre" required="">
+						<input type="email" name="name" value="" placeholder="Correo" required="">
+						<input type="tel" name="name" value="" placeholder="Número">
+						<input type="submit" name="name" value="Enviar">
+					</form>
+				</div>
+			</div>
+		</div>
+
+    	<script type="text/javascript">
+    		$('#phone').click(function(){
+    			$('#box, #tel').show(500);
+    			return false
+    		});
+    		$('#envelope').click(function(){
+    			$('#box, #mail').show(500);
+    			return false
+    		});
+    		$('#box span').click(function(){
+    			$('#box, #mail, #tel').hide(500);
+    		});
+    		$('#tel button').click(function(){
+    			$('#tel').hide(500);
+    			$('#mail').show(500);
+    		});
+    	</script>
+
 		<div id="section_samsara">
 			<img src="images/logo_samsara.png" alt="logo Samsara" type="imagen desarrollos en Queretaro" id="logo_samsara"></a>
 			<div>
@@ -92,7 +135,8 @@
 								<li><span class="text_blue">Salas Lounge</span></li>
 							</ul>
 						</p>
-					</div>
+						<div id="lista_areas">Alberca | Asadores | Juegos Infantiles |  &Aacute;reas Verdes | Salas Lounge</div>
+						</div>
 					<img src="images/areas_comunes.png" id="foto_areas">
 				</section>
 
@@ -131,15 +175,15 @@
 						<h4 class="length">Crecer el patrimonio familiar es la mejor manera de cuidar el futuro de tus hijos. </h4>
 					</div>
 					<div class="clearfix">
+						<a class="fancybox" rel="group" href="images/big/acceso_samsara_big.png"><img src="images/small/acceso_samsara_s.png" alt="" class="galeria"/></a>
+						<a class="fancybox" rel="group" href="images/big/sembrado_big.png"><img src="images/small/sembrado_s.png" alt="" class="galeria"/></a>
 						<a class="fancybox" rel="group" href="images/big/fachada_big.png"><img src="images/small/fachada_s.png" alt="" class="galeria"/>
 						</a>
-						<a class="fancybox" rel="group" href="images/big/acceso_samsara_big.png"><img src="images/small/acceso_samsara_s.png" alt="" class="galeria"/></a>
-						<a class="fancybox" rel="group" href="images/big/fachada_corte_big.png"><img src="images/small/fachada_corte_s.png" alt="" class="galeria"/></a>
 						<a class="fancybox" rel="group" href="images/big/areas_comunes_big.png"><img src="images/small/areas_comunes_s.png" alt="" class="galeria"/></a>
 						<a class="fancybox" rel="group" href="images/big/estancia_big.png"><img src="images/small/estancia_s.png" alt="" class="galeria"/></a>
 						<a class="fancybox" rel="group" href="images/big/recamara_big.png"><img src="images/small/recamara_s.png" alt="" class="galeria"/></a>
 						<a class="fancybox" rel="group" href="images/big/rooftop_big.png"><img src="images/small/rooftop_s.png" alt="" class="galeria"/></a>
-						<a class="fancybox" rel="group" href="images/big/sembrado_big.png"><img src="images/small/sembrado_s.png" alt="" class="galeria"/></a>
+						<a class="fancybox" rel="group" href="images/big/fachada_corte_big.png"><img src="images/small/fachada_corte_s.png" alt="" class="galeria"/></a>
 						
 					</div>	
 				</section>
@@ -150,13 +194,15 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.912558544602!2d-100.4038840496453!3d20.509810510599994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d345ce92b080db%3A0x850fc605e0d88912!2sEl+Condado!5e0!3m2!1sen!2smx!4v1465594200904" frameborder="0" style="border:0" allowfullscreen id="maps_size"></iframe>
 						</div>
 						<div id="contacto">
+
 							<form action="" id="box_datos">
-								<input type="text" name="name" value="" placeholder="Nombre">
+								<p>Hola! Gracias por visitarnos, por favor deja tus datos y con gusto te envíamos más información :)</p>
+								<input type="text" name="name" value="" placeholder="Nombre" required="">
 								<input type="email" name="name" value="" placeholder="Correo Electrónico" required="">
 								<input type="tel" name="" value="" placeholder="Teléfono">
 								<input type="submit" name="" value="Enviar">
 							</form>
-							<a href="mailto:contacto@brownfields.mx">Escr&iacute;benos</a>
+							<!-- <a href="mailto:contacto@brownfields.mx">Escr&iacute;benos</a> -->
 						</div>
 					</div>
 				</section>
@@ -171,6 +217,11 @@
 
 		<footer>
 			<p>&copy; 2016 BrownFields Desarrollos  | Derechos Reservados.</p>
+			<div id="mobile_footer" class="clearfix">
+				<a href="#" id="envelope_foot"> <img src="images/icons/email.png" id="icon_envelope_f"></a>
+				<a href="#" id="phone_foot"> <img src="images/icons/phone.png" id="icon_tel_f"></a>
+				<a href="#" id="whats"> <img src="images/icons/whatsapp.png" id="icon_whats"></a>
+			</div>
 		</footer>
 	</body>
 </html>
