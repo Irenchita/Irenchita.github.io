@@ -615,7 +615,6 @@ img {
 #mobile {
 	display: none;
 	cursor: pointer;
-	background-color: grey;
 }
 
 
@@ -825,18 +824,20 @@ img {
 }
 @media only screen and (max-width: 715px) {
 	#section_header{
-		height: 3.9em;
+		height: 4.3em;
 	}
 	
 	#logo_BF{
-		width: 13%;
+		width: 15%;
 		margin-left: .3em;
 	}
 	nav {
-		width: 75%;
+		width: 19%;
+		background-color: #ccc;
+		float: right;
 	}
 	#social{
-		width: 7%;
+		display: none;
 	}
 	
 	nav a {
@@ -863,7 +864,7 @@ img {
 	}
 	
 	#logo_samsara{
-		width: 90%;
+		width: 97%;
 	}
 	#samsara_flor{
 		width: 45%;
