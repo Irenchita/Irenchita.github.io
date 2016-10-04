@@ -31,6 +31,12 @@
 				<a href="images/Samsara_ElCondado_Qro.pdf" download id="folleto">Descarga Folleto</a>
 			</nav>
 
+			<div id="burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
 			<div id="contact_header" class="clearfix">
 				<span id="text">Llámanos!</span>
 				<a href="#" id="envelope"> <img src="images/icons/email.png" id="icon_envelope"></a>
@@ -64,6 +70,17 @@
 					</form>
 				</div>
 			</div>
+			<div id="whatsapp">
+				<span>x</span>
+				<p>Hola! Nuestros asesores se pondrán en contacto :)</p>
+				<div>
+					<form action="">
+						<input type="text" name="name" value="" placeholder="Nombre" required="">
+						<input type="tel" name="name" value="" placeholder="Número">
+						<input type="submit" name="name" value="Enviar">
+					</form>
+				</div>
+			</div>
 		</div>
 
     	<script type="text/javascript">
@@ -82,6 +99,21 @@
     			$('#tel').hide(500);
     			$('#mail').show(500);
     		});
+    		// $(window).scroll(function(){
+      //   		if ($(this).scrollTop() > 2500) {
+      //     			$('#box, #mail').show(500);
+      //   		}
+      //   		else {
+      //     			$('#box #mail').hide(500);
+      //   		}
+     	// 	});
+      // 		$('#mail span').click(function(){
+      //   		$('#mail').hide(0);
+      //   		function aparece(){
+      //   			$('#mail').show()
+      //   		}
+      //   		setTimeout(aparece,8000);
+      // 		});
     	</script>
 
 		<div id="section_samsara">
@@ -112,9 +144,9 @@
 					<div id="text_samsara">
 						<h3>Vive en Quer&eacute;taro</h3>
 						<hr>
-						<p>
-							<p><em>Samsara</em> es un desarrollo de 39 exclusivas casas con excelente diseño y funcionalidad provocando calidez y armon&iacute;a en tu espacio. </p>
-							<p>Contamos con diseños desde <em>135 a 153m2</em></p>
+						<p class="length">
+							<p><em>Samsara</em> es un desarrollo de 39 exclusivas casas con excelente diseño y funcionalidad <span id="p_bye">provocando calidez y armon&iacute;a en tu espacio</span>
+							<p>Contamos con diseños desde <em>135 a 170m2</em></p>
 							<p>A partir de <em>$1,690,000.</em></p> 
 						</p>
 					</div>	
@@ -145,7 +177,7 @@
 						<h3>Nuestros Espacios</h3>
 						<hr>
 						<div class="length">
-							<p class="not_justify">Tanto la distribuci&oacute;n de espacios como la iluminaci&oacute;n son fundamentales, por eso hemos cuidado cada detalle para darte un estilo de vida &uacute;nico.</p>
+							<p>Tanto la distribuci&oacute;n de espacios como la iluminaci&oacute;n son fundamentales, por eso hemos cuidado cada detalle para darte un estilo de vida &uacute;nico.</p>
 							<h5>Pregunta por nuestra opci&oacute;n con Cuarto de Usos M&uacute;ltiples</h5>
 						</div>
 					</div>
@@ -153,7 +185,7 @@
 						<div id="PB">
 							<h1>Planta Baja</h1>
 							<img src="images/flor_samsara.png" class="img_flor">
-							<img src="images/planta_PB.png" class="img_planta">
+							<img src="images/planta_PB.png">
 						</div>
 						<div id="PA">
 							<h1>Planta Alta</h1>
@@ -223,5 +255,28 @@
 				<a href="#" id="whats"> <img src="images/icons/whatsapp.png" id="icon_whats"></a>
 			</div>
 		</footer>
+
+    	<script type="text/javascript">
+    		$('#phone_foot').click(function(){
+    			$('#box, #tel').show(500);
+    			return false
+    		});
+    		$('#envelope_foot').click(function(){
+    			$('#box, #mail').show(500);
+    			return false
+    		});
+    		$('#whats').click(function(){
+    			$('#box, #whatsapp').show(500);
+  				return false
+    		});    		
+    		$('#box span').click(function(){
+    			$('#box, #mail, #tel, #whatsapp').hide(500);
+    		});
+    		$('#tel button').click(function(){
+    			$('#tel').hide(500);
+    			$('#mail').show(500);
+    		});
+
+    	</script>
 	</body>
 </html>

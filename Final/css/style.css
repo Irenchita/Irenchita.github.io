@@ -132,16 +132,17 @@ nav a:hover {
 }
 
 #box{
-	position: relative;
-	/*background-color: #ccc;*/
-	background-color: rgba(0,0,0,0.19);
-	/*text-align: center;*/
+	position: fixed;
+	background-color: rgba(0,0,0,0.66);
 	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	display: none;
-	/*margin-top: 0%;*/
+	z-index: 100;
 }
 
-#mail{
+#mail, #whatsapp{
 	position: fixed;
 	/*background-color: rgb(20,60,106);*/
 	background-color: #ccc;
@@ -156,7 +157,7 @@ nav a:hover {
 	/*color: #fff;*/
 	color: #000;
 	/*color: rgb(20,60,106);*/
-	margin-top: 8%;
+	margin-top: 13%;
 }
 
 #tel{
@@ -165,18 +166,18 @@ nav a:hover {
 	background-color: #ccc;
 	/*background-color: #000;*/
 	text-align: center;
-	width: 30%;
+	width: 42%;
 	padding: .7em .5em 1em .5em;
 	border: 1px solid #fff;
 	border-radius: .2em;
 	display: none;
-	margin-left: 35%;
+	margin-left: 29%;
 	/*color: #fff;*/
 	color: #000;
 	/*color: rgb(20,60,106);*/
-	margin-top: 8%;
+	margin-top: 15%;
 }
-#mail input{
+#mail input, #whatsapp input{
 	display: block;
 	width: 70%;
 	margin: auto;
@@ -190,15 +191,17 @@ nav a:hover {
 	line-height: 1.5em;
 }
 
-#mail input[type="submit"] {
+#mail input[type="submit"], #whatsapp input[type="submit"] {
  /*   background-color: #000;*/
-    background-color: #97b545;
+    background-color: #000;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     border: 1px solid #ccc;
-    }
+    cursor: pointer
+    letter-spacing:.5em;
+ }
 
-#mail p{
+#mail p, #whatsapp p{
 	margin: auto;
 	text-align: center;
 	width: 75%;
@@ -206,7 +209,7 @@ nav a:hover {
 	font-size: 1.5em;
 }
 
-#mail span, #tel span{
+#mail span, #tel span, #whatsapp span{
 	cursor: pointer;
 	position: absolute;
 	display: block;
@@ -254,9 +257,9 @@ nav a:hover {
 
 #tel button[type="button"] {
     /*background-color: #000;*/
-    background-color: #97b545;
+    background-color: #000;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     border: 1px solid #ccc;
     border-radius: .5em;
     padding: 1em;
@@ -385,13 +388,12 @@ em {
 	padding: 0 3em;
 	margin-bottom: 1em;
 }
-p {
-	text-align: justify;
-}
+
 #text_samsara {
 	width: 45%;
 	float: left;
 	padding: 1em;
+	line-height: 2em;
 	/*background-color: orange;*/
 }
 #foto_samsara {
@@ -401,21 +403,27 @@ p {
 #text_areas{
 	width: 45%;
 	float: right;
-	padding: 0 1em;
+	padding: 1em;
+	line-height: 2em;
 }
 #foto_areas{
 	width: 55%;
 	float: left;
+}
+
+#p_bye{
+	display: inline-block;
+}
+
+.section_samsara h3{
+	padding: 0em;
+	margin-top: 0em;
 }
 .length{
 	width: 47%;
 	text-align: center;
 	margin:auto;
 	padding-top: 2em;
-}
-
-.not_justify{
-	text-align: center;
 }
 
 ul {
@@ -442,8 +450,8 @@ ul {
 }
 
 .img_flor{
-	margin-top: -.2em;
-	width: 20%;
+	margin-top: -.3em;
+	width: 25%;
 }
 
 #PB {
@@ -471,7 +479,7 @@ ul {
 	background-color: rgba(255,255,255,.7);
 	margin: auto;
 	width: 100%;
-	padding: 5em 6em;
+	padding: 4em;
 }
 
 .galeria {
@@ -558,35 +566,31 @@ footer p{
 
 #envelope_foot{
 	width: 33%;
-/*	background-color: yellow;*/
 	float: left;
 }
 
 #phone_foot{
 	width: 33%;
-/*	background-color: blue;*/
 	float: left;
 }
 
 #whats{
 	width: 33%;
-/*	background-color: grey;*/
 	float: left;
 }
 
 #icon_tel_f{
- 	width: 19%;
-/* 	background-color: pink;*/
+	margin-top: .15em;
+ 	width: 25%;
 }
 
 #icon_envelope_f{
- 	width: 25%;
-/* 	background-color: pink;*/
+	margin-top: .3em;
+ 	width: 31%;
 }
 
 #icon_whats{
-	width: 21%;
-/* 	background-color: pink;*/
+	width: 29%;
 }
 
 #privacidad{
@@ -607,24 +611,13 @@ img {
 	width: 100%;
 }
 
-.img_planta{
-	margin-top: -.7em;
-}
-
 #mobile {
 	display: none;
 	cursor: pointer;
+	background-color: grey;
 }
 
-@media only screen and (max-width: 1550px) {
-	
-	#text_samsara p{
-		line-height: 3em;
-	}
-	#text_areas p{
-		line-height: 2em;
-	}
-}
+
 @media only screen and (max-width: 1301px) {
 	
 	nav {
@@ -649,23 +642,20 @@ img {
 
 	#text_areas{
 		font-size: .8em;
+		width:47%;
 	}
 	#text_samsara{
 		font-size: .9em;
-	}
-	
-	#text_samsara, #text_areas{
 		width:47%;
 	}
+	
+
 	#foto_samsara, #foto_areas{
 		width: 53%;
 	}
 	
 	#samsara_flor{
 		margin-top: -1.3em;
-	}
-	#section_galeria{
-	padding: 5em 5em;
 	}
 }
 
@@ -695,15 +685,15 @@ img {
 		width: 60%;
 		font-size: .9em;
 	}
+	.section_samsara{
+		padding: 0 .5em;
+	}
 	#text_samsara, #text_areas{
 		width:50%;
 		font-size: .8em;
 	}
 	#foto_samsara, #foto_areas{
 		width: 50%;
-	}
-	.section_samsara{
-		padding: 0 .7em;
 	}
 	
 	ul {
@@ -713,12 +703,14 @@ img {
 	#lista_areas{
 		display: block;
 	}
-
-	#samsara_flor{
-		margin-top: -1.1em;
+	#logo_samsara{
+		width: 60%;
 	}
+	#samsara_flor{
+		width: 33%;
+	}	
 	#section_galeria{
-	padding: 5em 4em;
+		padding: 3em;
 	}
 }
 
@@ -734,17 +726,20 @@ img {
 		width: 22%;
 	}
 	#icon_social{
-		width: 90%;
+		width: 95%;
 	}
 	#text_areas>p:nth-of-type(1) {
 		display: none;
 	}
 	#text_samsara{
-		padding: 0 1em;
+		padding: 0 .5em;
 	}
 	#maps_size{
 		width: 25em;
 		height: 20em;	
+	}
+	#logo_samsara{
+		width: 70%;
 	}
 }
 
@@ -757,9 +752,6 @@ img {
 		font-size: .8em;
 	}
 
-	main{
-		margin-top: 1em;
-	}
 	#border_home{
 		padding: 6em 5em;
 	}
@@ -771,25 +763,6 @@ img {
 		margin:auto;
 	}
 
-	#text_samsara, #text_areas{
-		width:51%;
-		font-size: .75em;
-		line-height: 2em;
-	}
-
-	#text_samsara p{
-		line-height: 2em;
-	}	
-	
-	#foto_samsara, #foto_areas{
-		width: 49%;
-	}
-	#samsara_flor{
-		margin-top: -1.1em;
-	}
-	#section_galeria{
-	padding: 5em 4em;
-	}
 }
 
 @media only screen and (max-width: 774px) {
@@ -807,8 +780,11 @@ img {
 	nav a{
 		font-size: .7em;
 	}
-	main {
-		margin-top: .5em;
+	#logo_samsara{
+		width: 80%;
+	}
+	#samsara_flor{
+		width: 37%;
 	}
 	#text_samsara, #text_areas{
 		float: none;
@@ -822,7 +798,7 @@ img {
 
 	#foto_samsara, #foto_areas{
 		float: none;
-		width: 80%;
+		width: 85%;
 		margin: auto;
 		margin-top: 1em;
 	}
@@ -842,20 +818,24 @@ img {
 		width: 50%;
 	}
 	#section_galeria{
-	padding: 4em 3em;
+	padding: 2em;
 	}
 	
 }
 @media only screen and (max-width: 715px) {
+	#section_header{
+		height: 3.9em;
+	}
 	
 	#logo_BF{
-		width: 12%;
+		width: 13%;
+		margin-left: .3em;
 	}
 	nav {
-		width: 80%;
+		width: 75%;
 	}
 	#social{
-		width: 8%;
+		width: 7%;
 	}
 	
 	nav a {
@@ -874,14 +854,18 @@ img {
 
 	#mobile_footer{
 		display: block;
+		padding: .7em;
 	}
 
 	footer p{
 		display: none;
 	}
-
-	main {
-		margin-top: 1.1em;
+	
+	#logo_samsara{
+		width: 90%;
+	}
+	#samsara_flor{
+		width: 45%;
 	}
 	#home, #border_home{
 		height: 20em;	
@@ -907,11 +891,24 @@ img {
 		font-size: 1em;
 		line-height: 1em;
 	}
+
+	#text_samsara, #text_areas{
+		width: 85%;
+	}
+	#p_bye{
+		display: none;
+	}
 	#PB, #PA, #RG{
 		float: none;
-		width: 50%;
+		width: 75%;
 		margin: auto;
+		font-size: .8em;
+		padding: .1em 0em;	
 	}
+	.img_flor{
+		width: 15%;
+	}
+
 	.length{
 		width: 80%;
 		font-size: .8em;
@@ -919,9 +916,8 @@ img {
 	#section_plantas p{
 		display: none;
 	}
-	#PB, #PA, #RG {
-		font-size: .8em;
-		padding: .1em 0em;	
+	#section_galeria{
+	padding: 1em .5em;
 	}
 	#section_galeria h3 {
 		font-size: 1em;
@@ -935,13 +931,47 @@ img {
 		display: none;
 	}
 	
-	#section_galeria{
-	padding: 4em 2em;
+	#section_contacto{
+		height: 25em;
+		padding: 1em;
 	}
 
+	#mail, #whatsapp{
+	width: 80%;
+	margin-left: 10%;
+	font-size: .7em;
+	}
+
+	#tel{
+	width: 70%;
+	margin-left: 15%;
+	font-size: .7em;	
+	}
 }
 
 @media only screen and (max-width: 450px){
+	
+	#section_header{
+		height: 3.7em;
+	}
+	#logo_BF{
+		width: 15%;
+		margin-top: .5em;
+	}
+	nav {
+		width: 70%;
+	}
+	#social{
+		width: 10%;
+	}
+	
+	#logo_samsara{
+		width: 95%;
+	}
+	#samsara_flor{
+		width: 53%;
+	}
+
 	#home, #border_home{
 		height: 22em;	
 	}
@@ -961,10 +991,22 @@ img {
 		font-size: .8em;
 		line-height: 1.1em;
 	}
-	
-	#section_galeria{
-	padding: 4em 1em;
+	.section_samsara{
+		padding: .1em;
+	}
+	#text_samsara, #text_areas{
+		width: 98%;
+		line-height: 2em;
 	}
 
+	#foto_samsara, #foto_areas{
+		width: 98%;
+	}
+	#section_galeria{
+	padding: 1em 0em;
+	}
 
+	#section_contacto{
+		height: 23em;
+	}
 }
