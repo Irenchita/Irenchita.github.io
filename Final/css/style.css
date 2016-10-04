@@ -138,6 +138,7 @@ nav a:hover {
 	height: 100%;
 	top: 0;
 	left: 0;
+	bottom: 0;
 	display: none;
 	z-index: 100;
 }
@@ -807,8 +808,8 @@ img {
 		padding: .1em 0em;	
 	}
 	#maps_size{
-		width: 18em;
-		height: 18em;	
+		width: 15em;
+		height: 15em;	
 	}
 	#maps {
 		width: 50%;
@@ -919,6 +920,7 @@ img {
 	#section_galeria{
 	padding: 1em .5em;
 	}
+
 	#section_galeria h3 {
 		font-size: 1em;
 	}
@@ -932,6 +934,7 @@ img {
 	}
 	
 	#section_contacto{
+		margin-top: 1.5em;
 		height: 25em;
 		padding: 1em;
 	}
@@ -995,7 +998,7 @@ img {
 		padding: .1em;
 	}
 	#text_samsara, #text_areas{
-		width: 98%;
+		width: 100%;
 		line-height: 2em;
 	}
 
