@@ -143,7 +143,7 @@ nav a:hover {
 	z-index: 101;
 }
 
-#mail, #whatsapp, #mail_foot, #tel_foot{
+#mail{
 	position: fixed;
 	background-color: #ccc;
 	text-align: center;
@@ -154,6 +154,21 @@ nav a:hover {
 	margin-left: 22.5%;
 	color: #000;
 	margin-top: 15%;
+	line-height: 1.9em;
+	padding: .7em 0;
+}
+
+#whatsapp, #mail_foot, #tel_foot{
+	position: fixed;
+	background-color: #ccc;
+	text-align: center;
+	width: 55%;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 22.5%;
+	color: #000;
+	margin-top: 45%;
 	line-height: 1.9em;
 	padding: .7em 0;
 }
@@ -274,7 +289,7 @@ nav a:hover {
     margin-left: 1em;
     margin-top: .7em;
     }
-    
+
 #tel_foot a{
 	text-decoration: none;
 	color: #fff;
@@ -858,9 +873,29 @@ img {
 	#tel{
 	width: 50%;
 	margin-left: 25%;
-}
-	
-}
+	}
+	#recuerdame{
+	width: 90%;
+	}
+
+	#tel_foot {
+		width: 100%
+		margin-left:0%;
+	}
+	#tel_foot a {
+		width: 100%;
+		font-size: 1em;
+		padding: .3em;
+	}
+	#tel_foot span{
+	padding: .5em;
+	right: -.9em;
+	margin-top: -2.2em;
+	border-radius: .7em;
+	text-transform: none;
+
+	}
+
 @media only screen and (max-width: 715px) {
 	#section_header{
 		height: 4.3em;
@@ -982,7 +1017,7 @@ img {
 	#mail_foot, #whatsapp {
 	width: 84%;
 	margin-left: 8%;
-	font-size: .7em;
+	font-size: .9em;
 	}
 
 @media only screen and (max-width: 450px){
