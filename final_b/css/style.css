@@ -1,0 +1,1137 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+@import url("fonts/perpetua");
+@import url("fonts/antipasto");
+  
+@font-face {
+	font-family: 'perpetua';
+	src: url('fonts/perpetua/303981_0_0.eot');
+	src: url('fonts/perpetua/303981_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/perpetua/303981_0_0.woff2') format('woff2'),url('fonts/perpetua/303981_0_0.woff') format('woff'),url('fonts/perpetua/303981_0_0.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'antipasto';
+	src: url('fonts/antipasto/antipasto_extralight.otf');
+	src: url('fonts/antipasto/antipasto_extralight.otf?#iefix') format('embedded-opentype'), format('truetype');
+}
+* {
+	padding: 0;
+	margin: 0;	
+	box-sizing: border-box;
+}
+
+#section_header {
+	position: fixed;
+	height: 4.4em;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
+	top: 0;
+	border-bottom: .15em solid rgb(151,181,69);
+}
+
+#logo_BF {
+	width: 10%;
+	float: left;
+	padding-top:.5em;
+/*	background-color: blue;*/
+}
+
+#icon_BF{
+	width: 60%;
+}
+
+nav {
+	width: 65%;
+	float: left;
+	padding: 1.3em;
+	text-align: center;
+}
+
+nav a {
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	color: rgb(20,60,106);
+	padding: .7em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: 1.2em;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: rgb(151,181,69);
+}
+
+
+.folleto{
+	font-size: .9em;
+	color: #97b545;
+}
+
+.folleto:hover {
+	background-color: #ccc;
+	border-radius: .5em;
+}
+#contacto_nav{}
+
+#contact_header{
+	background-color: #97b545;
+	width: 18%;
+	float: left;
+	padding: .5em .2em;
+	margin-top: .5em;
+}
+
+#text{
+	width: 50%;
+/*	background-color: orange;*/
+	color: #fff;
+	float: left;
+	padding: .15em;
+	font-size: 1.1em;
+}
+#envelope{
+	width: 25%;
+/*	background-color: yellow;*/
+	float: left;
+	margin-top: .1em;
+}
+
+#phone{
+	width: 25%;
+/*	background-color: blue;*/
+	float: left;
+	margin-top: .1em;
+	margin-left: -.1em;
+}
+
+#icon_tel{
+ 	width: 47%;
+/* 	background-color: pink;*/
+}
+
+#icon_envelope{
+ 	width: 70%;
+/* 	background-color: pink;*/
+}
+
+#social{
+	width: 7%;
+	float: left;
+	padding-top: .7em;
+/*	background-color: grey;*/
+}
+#icon_social{
+	width: 50%
+}
+
+#box {
+	position: fixed;
+	background-color: rgba(0,0,0,0.66);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	z-index: 101;
+}
+
+#mail{
+	position: fixed;
+	background-color: #ccc;
+	text-align: center;
+	width: 55%;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 22.5%;
+	color: #000;
+	margin-top: 15%;
+	line-height: 1.9em;
+	padding: .7em 0;
+}
+
+#whatsapp, #mail_foot, #tel_foot{
+	position: fixed;
+	background-color: #ccc;
+	text-align: center;
+	width: 55%;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 22.5%;
+	color: #000;
+	margin-top: 45%;
+	line-height: 1.9em;
+	padding: .7em 0;
+}
+
+#recuerdame{
+	position: fixed;
+	width: 45%;
+	bottom: 0;
+	right: 0;
+	margin-right: .5em;
+	margin-bottom: .5em;
+	background-color: #ccc;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	color: #000;
+	line-height: 1.9em;
+	padding: .7em 0;
+	z-index: 102;
+}
+
+#mail input, #whatsapp input, #mail_foot input, #recuerdame input{
+	display: block;
+	width: 90%;
+	margin: auto;
+	padding: .5em;
+	margin-top: .7em;
+	border: 1px solid #ccc;
+	border-radius: .5em;
+	background-color: #fff;
+	color: #000;
+}
+
+#mail input[type="submit"], #whatsapp input[type="submit"],#mail_foot input[type="submit"], #recuerdame input[type="submit"]{
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer
+    letter-spacing:.5em;
+ }
+
+#whatsapp p, #mail_foot p, #recuerdame p, #mail p{
+	margin: auto;
+	text-align: center;
+	width: 95%;
+	padding: .5em;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#mail span, #tel span, #whatsapp span, #mail_foot span, #tel_foot span, #recuerdame span{
+	cursor: pointer;
+	position: absolute;
+	display: block;
+	background-color: rgb(98,98,98);
+	/*background-color: #000;*/
+	padding: .7em;
+	right: -.8em;
+	margin-top: -1.7em;
+	border: 2px solid #fff;
+	border-radius: 2em;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+#tel{
+	position: fixed;
+	background-color: #ccc;
+	text-align: center;
+	width: 40%;
+	padding: .5em;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 30%;
+	color: #000;
+	margin-top: 15%;
+}
+
+#img_tel_box{
+ 	width: 49%;
+}
+
+#icon_tel_box{
+	float: left;
+	width: 40%;
+}
+
+#tel a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-top: .7em;
+	float: left;
+	width: 60%;
+}
+#tel p{
+	float: left;
+	width: 40%;
+	margin-top: 1em;
+	text-align: right;
+	font-size: .9em;
+}
+
+#tel button[type="button"] {
+    /*background-color: #000;*/
+    background-color: #000;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: .5em;
+    padding: 1em;
+    cursor: pointer;
+    float: left;
+    margin-left: 1em;
+    margin-top: .7em;
+    }
+
+#tel_foot a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: .7em;
+}
+
+#section_samsara{
+	width: 28%;
+	margin: auto;
+	margin-bottom: .4em;
+}
+
+#logo_samsara {
+	width: 50%;
+}
+
+
+#samsara_flor{
+	width: 25%;
+	margin-top: -1.5em;
+}
+
+
+#preventa {
+	float: right;
+}
+
+#wrapper{
+	margin: auto;
+}
+
+body {
+	font-family: 'antipasto', sans-serif;
+	font-size: 16px;
+	color: rgb(98,98,98);
+	font-weight: 400;
+	line-height: 1.5em;
+	text-align: center;
+	letter-spacing: .15em;
+	padding-top: 4.5em;
+	background-color: #fff;
+}
+
+h1, h3{
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	margin-top: .5em;
+	padding: .5em 0em;	
+	text-transform: uppercase;
+	color: rgb(20,60,106);
+}
+
+section>h2 {
+	margin-top: 1em;
+	padding: .5em 0em;	
+	text-transform: uppercase;
+	color: rgb(20,60,106);
+}
+
+hr {
+	width: 2em;
+	margin: .5em auto;
+	border: none;
+	background-color: rgb(151,181,69);
+	height: .1em;
+}
+
+#home{
+	text-align: center;
+	background: url("http://Irenchita.github.io/unit_6/images/fachada_corte_web.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: rgb(255,255,255);
+	line-height: 2em;
+	text-shadow: .05em .05em rgb(98,98,98);
+	height: 37.5em;
+}
+
+#border_home{
+	background-color: rgba(0,0,0,0.19);
+	padding: 8em 5em;
+	height: 37.5em;
+}
+
+#border_home h1 {
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	padding: 1.3em 0em;
+	font-size: 2.2em;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+}
+
+#home h2{
+	text-shadow: .02em .02em rgb(0,0,0);
+	font-weight: 400;
+}
+
+#home a {
+	background: rgb(151,181,69);
+	color: rgb(255,255,255);
+	margin: 2em;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5em 1.5em;
+	text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1.5em;
+}
+#video {
+	border-radius: 5%;
+}
+em {
+	color: rgb(151,181,69);
+	font-weight: 600;
+	letter-spacing: .15em;
+	font-size: 1.2em;
+	text-shadow: rgb(98,98,98);
+	text-transform: uppercase;
+}
+.section_samsara{
+	margin-top: 2em;
+	padding: 0 3em;
+	margin-bottom: 1em;
+}
+
+#text_samsara {
+	width: 45%;
+	float: left;
+	padding: 1em;
+	line-height: 2em;
+	/*background-color: orange;*/
+}
+#foto_samsara {
+	width: 55%;
+	float: right;
+}	
+#text_areas{
+	width: 45%;
+	float: right;
+	padding: 1em;
+	line-height: 2em;
+}
+#foto_areas{
+	width: 55%;
+	float: left;
+}
+
+#p_bye{
+	display: inline-block;
+}
+
+.section_samsara h3{
+	padding: 0em;
+	margin-top: 0em;
+}
+.length{
+	width: 47%;
+	text-align: center;
+	margin:auto;
+	padding-top: 2em;
+}
+
+ul {
+	text-align: justify;
+	padding: 0;
+	margin: .5em 0 0 15em;
+	color: rgb(151,181,69);
+}
+.text_blue{
+	color: rgb(20,60,106); 
+}
+
+#lista_areas{
+	display: none;
+	color: rgb(151,181,69);
+	margin: auto;
+	text-align: center;
+}
+
+#section_plantas{
+	background-color: rgb(255,255,255);
+	margin: auto;
+	padding-top: 2em;
+}
+
+.img_flor{
+	margin-top: -.3em;
+	width: 25%;
+}
+
+#PB {
+	padding: 1em;
+	float: left;
+	width: 33%;
+	margin: center;
+}
+
+#PA {
+	padding: 1em;
+	float: left;
+	width: 33%;
+	margin: center;
+}
+
+#RG {
+	padding: 1em;
+	float: left;
+	width: 33%;
+	margin: center;
+}
+
+#section_galeria{
+	background-color: rgba(255,255,255,.7);
+	margin: auto;
+	width: 100%;
+	padding: 4em;
+}
+
+.galeria {
+	width: 24.8%;
+	float: left;
+	margin: .1%;
+}
+.galeria_mobile {
+	display: none;
+}
+
+#section_galeria h4 {
+	margin-bottom: 1.5em;
+}
+
+#section_contacto{
+	margin: auto;
+	width: 100%;
+	padding: 2em;
+	background: url("http://Irenchita.github.io/unit_6/images/rooftop.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgba(0,0,0,0.19);
+}
+
+#maps {
+	float: left;
+	width: 60%;
+}
+
+#maps_size{
+	width: 32em;
+	height: 20em;
+}
+
+#contacto {
+	float: left;
+	width: 40%;
+}
+
+#box_datos {
+	padding: 1em;
+	color: #000;
+}
+
+#box_datos input{
+	display: block;
+	width: 70%;
+	margin: auto;
+	padding: .7em;
+	margin-top: .5em;
+	border: 1px solid #ccc;
+	border-radius: .5em;
+	background-color: rgba(0,0,0,0.19);
+}
+
+#box_datos p{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+}
+#box_datos input[type="submit"] {
+    background-color: #ccc;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+
+footer p{
+	text-align: center;
+	color: #fff;
+	font-size: .8em;
+	padding: 2em;
+	background-color: #000;
+}
+
+#mobile_footer{
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	bottom: 0;
+	border-top: .1em solid #ccc;
+	padding: .5em;
+	background-color: #000;
+}
+
+#envelope_foot{
+	width: 33%;
+	float: left;
+}
+
+#phone_foot{
+	width: 33%;
+	float: left;
+}
+
+#whats{
+	width: 33%;
+	float: left;
+}
+
+#icon_tel_f{
+	margin-top: .15em;
+ 	width: 25%;
+}
+
+#icon_envelope_f{
+	margin-top: .3em;
+ 	width: 31%;
+}
+
+#icon_whats{
+	width: 29%;
+}
+
+#privacidad{
+	float: left;
+	width: 15%;
+	margin: 1em 0 0 10em;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+img {
+	width: 100%;
+}
+
+#mobile {
+	height: 0;
+	background-color: #ccc;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	width: 50%;
+	top: 3.4em;
+	right:1.5em; 
+	z-index: -600;
+}
+
+#mobile a{
+	display: block;
+	font-family: 'perpetua', 'antipasto', sans-serif;
+	color: rgb(20,60,106);
+	padding: .5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: 1em;
+}
+
+#mobile a:hover {
+/*	color: rgb(151,181,69);*/
+	color: #ccc;
+	background-color: #000;
+	border: 1px solid #ccc;
+}
+
+#burger{
+	width: 3.5em;
+	height: 2.9em;
+	cursor: pointer;
+	position: absolute;
+	right: 1.5em;
+	top: .5em;
+	display: none;
+	background-color: #ccc;
+	padding:.5em;
+	/*z-index: 200;*/
+}
+
+#burger span{
+	display: block;
+	width: 65%;
+	height: .17em;
+	/*background-color: rgb(20,60,106);*/
+	background-color: #fff;
+	margin:.3em auto;
+}
+.menuaparece {
+	height: auto !important;
+	/*overflow: visible !important;*/
+}
+.holi{
+	display: block !important;
+}
+.bye{
+	display:none !important;
+}
+
+
+
+
+@media only screen and (max-width: 1301px) {
+	
+	nav {
+		padding: 1em;
+	}
+
+	nav a {
+		font-size: 1em;
+	}
+
+	#contact_header{
+		width: 20%;
+	}
+
+	#social {
+		width: 5%;
+	}
+
+	#icon_social {
+		width: 80%;
+	}
+
+	#text_areas{
+		font-size: .8em;
+		width:47%;
+	}
+	#text_samsara{
+		font-size: .9em;
+		width:47%;
+	}
+	
+
+	#foto_samsara, #foto_areas{
+		width: 53%;
+	}
+	
+	#samsara_flor{
+		margin-top: -1.3em;
+	}
+}
+
+@media only screen and (max-width: 1090px) {
+
+	nav a {
+		font-size: .9em;
+		padding: .4em;
+	}
+	#icon_BF{
+		width: 75%;
+	}
+
+	#text{
+		font-size: .9em;
+	}
+
+	#icon_tel{
+	 	width: 55%;
+	}
+
+	#icon_envelope{
+	 	width: 75%;
+	}
+	#icon_tel_box{
+	width: 30%;
+	}
+
+	#tel a{
+	font-size: 1.5em;
+	margin-top: .3em;
+	margin-left: -.5em;
+	width: 70%;
+	}
+
+	.length{
+		width: 60%;
+		font-size: .9em;
+	}
+	.section_samsara{
+		padding: 0 .5em;
+	}
+	#text_samsara, #text_areas{
+		width:50%;
+		font-size: .8em;
+	}
+	#foto_samsara, #foto_areas{
+		width: 50%;
+	}
+	
+	ul {
+		display: none;
+	}
+
+	#lista_areas{
+		display: block;
+	}
+	#logo_samsara{
+		width: 60%;
+	}
+	#samsara_flor{
+		width: 33%;
+	}	
+	#section_galeria{
+		padding: 3em;
+	}
+}
+
+
+@media only screen and (max-width: 950px) {
+	nav {
+		width: 63%;
+	}
+	#contacto_nav{
+		display: none;
+	}
+	#contact_header{
+		width: 22%;
+	}
+	#icon_social{
+		width: 95%;
+	}
+	#text_areas>p:nth-of-type(1) {
+		display: none;
+	}
+	#text_samsara{
+		padding: 0 .5em;
+	}
+	#maps_size{
+		width: 25em;
+		height: 20em;	
+	}
+	#logo_samsara{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	
+	#icon_BF{
+		width: 90%;
+	}
+	#text{
+		font-size: .8em;
+	}
+
+	#border_home{
+		padding: 6em 5em;
+	}
+	.length{
+		width: 70%;
+		font-size: .8em;
+	}	
+	hr {
+		margin:auto;
+	}
+
+}
+
+@media only screen and (max-width: 774px) {
+
+	#logo_BF{
+		width: 11%;
+	}
+	nav {
+		width: 60%;
+	}
+	#social{
+		width: 7%;
+	}
+
+	nav a{
+		font-size: .7em;
+	}
+	#logo_samsara{
+		width: 80%;
+	}
+	#samsara_flor{
+		width: 37%;
+	}
+	#text_samsara, #text_areas{
+		float: none;
+		margin: auto;
+		width: 80%;
+	}
+
+	p{
+		text-align: center;
+	}
+
+	#foto_samsara, #foto_areas{
+		float: none;
+		width: 85%;
+		margin: auto;
+		margin-top: 1em;
+	}
+	#PB, #PA, #RG {
+		font-size: .9em;
+		padding: .1em 0em;	
+	}
+	#maps_size{
+		width: 15em;
+		height: 15em;	
+	}
+	#maps {
+		width: 50%;
+	}
+
+	#contacto {
+		width: 50%;
+	}
+	#section_galeria{
+	padding: 2em;
+	}
+	#tel{
+	width: 50%;
+	margin-left: 25%;
+	}
+	#recuerdame{
+	width: 90%;
+	}
+
+	#tel_foot {
+		width: 100%
+		margin-left:0%;
+	}
+	#tel_foot a {
+		width: 100%;
+		font-size: 1em;
+		padding: .3em;
+	}
+	#tel_foot span{
+	padding: .5em;
+	right: -.9em;
+	margin-top: -2.2em;
+	border-radius: .7em;
+	text-transform: none;
+
+	}
+
+@media only screen and (max-width: 715px) {
+	#section_header{
+		height: 4.3em;
+	}
+	
+	#logo_BF{
+		width: 15%;
+		margin-left: .3em;
+	}
+	nav, nav a, nav:hover a {
+		display: none;
+	}
+	
+	#social{
+		display: none;
+	}
+	#contact_header{
+		display: none;
+	}
+	#mobile, #burger {
+		display: block;
+	}
+
+	#mobile_footer{
+		display: block;
+		padding: .7em;
+	}
+
+	footer p{
+		display: none;
+	}
+	
+	#logo_samsara{
+		width: 97%;
+	}
+	#samsara_flor{
+		width: 45%;
+	}
+	#home, #border_home{
+		height: 20em;	
+	}
+	#border_home{
+		padding: 4em 3em;
+	}
+	#home a {
+		margin: 1.1em;
+		padding: .3em 1em;
+		font-size: 1.1em;
+	}
+
+	#border_home h1 {
+		margin-top: 1.5em;
+		padding: .5em 0;
+		font-size: 1.3em;
+		line-height: 1.1em;
+	}
+
+	#home h2{
+		margin-top: .5em;
+		font-size: 1em;
+		line-height: 1em;
+	}
+
+	#text_samsara, #text_areas{
+		width: 85%;
+	}
+	#p_bye{
+		display: none;
+	}
+	#PB, #PA, #RG{
+		float: none;
+		width: 75%;
+		margin: auto;
+		font-size: .8em;
+		padding: .1em 0em;	
+	}
+	.img_flor{
+		width: 15%;
+	}
+
+	.length{
+		width: 80%;
+		font-size: .8em;
+	}
+	#section_plantas p{
+		display: none;
+	}
+	#section_galeria{
+	padding: 1em .5em;
+	}
+
+	#section_galeria h3 {
+		font-size: 1em;
+	}
+
+	.galeria {
+	display: none;
+	}
+	.galeria_mobile{
+	display: block;
+	width: 49.5%;
+	float: left;
+	margin: .1%;
+	}
+
+	/*.galeria_mobile:hover {
+	background-color: rgba(0,0,0,.1)
+	}*/
+
+	#maps {
+		float: none;
+		width: 100%;
+	}
+
+	#contacto {
+		display: none;
+	}
+	
+	#section_contacto{
+		margin-top: 1.5em;
+		height: 25em;
+		padding: 1em;
+	}
+
+	#mail_foot, #whatsapp {
+	width: 84%;
+	margin-left: 8%;
+	font-size: .9em;
+	}
+
+@media only screen and (max-width: 450px){
+	
+	#section_header{
+		height: 3.7em;
+	}
+	#logo_BF{
+		width: 15%;
+		margin-top: .5em;
+	}
+	nav {
+		width: 70%;
+	}
+	#social{
+		width: 10%;
+	}
+	
+	#logo_samsara{
+		width: 95%;
+	}
+	#samsara_flor{
+		width: 53%;
+	}
+
+	#home, #border_home{
+		height: 22em;	
+	}
+
+	#home a {
+		margin: .8em;
+		padding: .3em 1em;
+		font-size: 1em;
+	}
+
+	#border_home h1 {
+		font-size: 1.1em;
+		line-height: 1.3em;
+	}
+	#home h2{
+		margin-top: .5em;
+		font-size: .8em;
+		line-height: 1.1em;
+	}
+	.section_samsara{
+		padding: .1em;
+	}
+	#text_samsara, #text_areas{
+		width: 100%;
+		line-height: 2em;
+	}
+
+	#foto_samsara, #foto_areas{
+		width: 98%;
+	}
+	#section_galeria{
+	padding: 1em 0em;
+	}
+
+	#section_contacto{
+		height: 23em;
+	}
+}
