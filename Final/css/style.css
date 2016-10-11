@@ -131,7 +131,7 @@ nav a:hover {
 	width: 50%
 }
 
-#box{
+#box {
 	position: fixed;
 	background-color: rgba(0,0,0,0.66);
 	width: 100%;
@@ -140,60 +140,55 @@ nav a:hover {
 	left: 0;
 	bottom: 0;
 	display: none;
-	z-index: 100;
+	z-index: 101;
 }
 
-#mail, #whatsapp{
+#mail, #whatsapp, #mail_foot, #tel_foot{
 	position: fixed;
-	/*background-color: rgb(20,60,106);*/
 	background-color: #ccc;
-	/*background-color: #000;*/
 	text-align: center;
-	width: 50%;
-	padding: .7em .5em 1em .5em;
+	width: 55%;
 	border: 1px solid #fff;
 	border-radius: .2em;
 	display: none;
-	margin-left: 25%;
-	/*color: #fff;*/
+	margin-left: 22.5%;
 	color: #000;
-	/*color: rgb(20,60,106);*/
-	margin-top: 13%;
-}
-
-#tel{
-	position: fixed;
-	/*background-color: rgb(20,60,106);*/
-	background-color: #ccc;
-	/*background-color: #000;*/
-	text-align: center;
-	width: 42%;
-	padding: .7em .5em 1em .5em;
-	border: 1px solid #fff;
-	border-radius: .2em;
-	display: none;
-	margin-left: 29%;
-	/*color: #fff;*/
-	color: #000;
-	/*color: rgb(20,60,106);*/
 	margin-top: 15%;
+	line-height: 1.9em;
+	padding: .7em 0;
 }
-#mail input, #whatsapp input{
+
+#recuerdame{
+	position: fixed;
+	width: 45%;
+	bottom: 0;
+	right: 0;
+	margin-right: .5em;
+	margin-bottom: .5em;
+	background-color: #ccc;
+	text-align: center;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	color: #000;
+	line-height: 1.9em;
+	padding: .7em 0;
+	z-index: 102;
+}
+
+#mail input, #whatsapp input, #mail_foot input, #recuerdame input{
 	display: block;
-	width: 70%;
+	width: 90%;
 	margin: auto;
 	padding: .5em;
 	margin-top: .7em;
-	/*border: 1px solid #fff;*/
 	border: 1px solid #ccc;
 	border-radius: .5em;
 	background-color: #fff;
 	color: #000;
-	line-height: 1.5em;
 }
 
-#mail input[type="submit"], #whatsapp input[type="submit"] {
- /*   background-color: #000;*/
+#mail input[type="submit"], #whatsapp input[type="submit"],#mail_foot input[type="submit"], #recuerdame input[type="submit"]{
     background-color: #000;
     text-transform: uppercase;
     color: #fff;
@@ -202,15 +197,16 @@ nav a:hover {
     letter-spacing:.5em;
  }
 
-#mail p, #whatsapp p{
+#whatsapp p, #mail_foot p, #recuerdame p, #mail p{
 	margin: auto;
 	text-align: center;
-	width: 75%;
+	width: 95%;
 	padding: .5em;
-	font-size: 1.5em;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
-#mail span, #tel span, #whatsapp span{
+#mail span, #tel span, #whatsapp span, #mail_foot span, #tel_foot span, #recuerdame span{
 	cursor: pointer;
 	position: absolute;
 	display: block;
@@ -225,10 +221,22 @@ nav a:hover {
 	text-transform: uppercase;
 
 }
+#tel{
+	position: fixed;
+	background-color: #ccc;
+	text-align: center;
+	width: 40%;
+	padding: .5em;
+	border: 1px solid #fff;
+	border-radius: .2em;
+	display: none;
+	margin-left: 30%;
+	color: #000;
+	margin-top: 15%;
+}
 
 #img_tel_box{
- 	width: 53%;
- 	/*background-color: pink;*/
+ 	width: 49%;
 }
 
 #icon_tel_box{
@@ -240,20 +248,17 @@ nav a:hover {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.9em;
-	/*background-color: blue;*/
+	font-size: 2em;
 	margin-top: .7em;
 	float: left;
-	margin-left: -1.1em;
+	width: 60%;
 }
-
-#tel p {
+#tel p{
 	float: left;
 	width: 40%;
 	margin-top: 1em;
 	text-align: right;
 	font-size: .9em;
-	/*background-color: yellow;*/
 }
 
 #tel button[type="button"] {
@@ -266,9 +271,16 @@ nav a:hover {
     padding: 1em;
     cursor: pointer;
     float: left;
-    margin-left: .7em;
+    margin-left: 1em;
     margin-top: .7em;
     }
+    
+#tel_foot a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+	margin-top: .7em;
+}
 
 #section_samsara{
 	width: 28%;
@@ -617,6 +629,19 @@ img {
 	cursor: pointer;
 }
 
+.holi{
+	display: block !important;
+}
+.bye{
+	display:none !important;
+}
+
+.menuaparece {
+	height: auto !important;
+	overflow: visible !important;
+	padding: 1em;
+}
+
 
 @media only screen and (max-width: 1301px) {
 	
@@ -679,6 +704,16 @@ img {
 
 	#icon_envelope{
 	 	width: 75%;
+	}
+	#icon_tel_box{
+	width: 30%;
+	}
+
+	#tel a{
+	font-size: 1.5em;
+	margin-top: .3em;
+	margin-left: -.5em;
+	width: 70%;
 	}
 
 	.length{
@@ -820,6 +855,10 @@ img {
 	#section_galeria{
 	padding: 2em;
 	}
+	#tel{
+	width: 50%;
+	margin-left: 25%;
+}
 	
 }
 @media only screen and (max-width: 715px) {
@@ -940,18 +979,11 @@ img {
 		padding: 1em;
 	}
 
-	#mail, #whatsapp{
-	width: 80%;
-	margin-left: 10%;
+	#mail_foot, #whatsapp {
+	width: 84%;
+	margin-left: 8%;
 	font-size: .7em;
 	}
-
-	#tel{
-	width: 70%;
-	margin-left: 15%;
-	font-size: .7em;	
-	}
-}
 
 @media only screen and (max-width: 450px){
 	

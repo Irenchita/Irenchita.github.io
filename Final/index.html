@@ -13,6 +13,14 @@
 		<!-- Add fancyBox -->
 		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 		<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+		<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+		<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
 
 	</head>
 	<body>
@@ -52,7 +60,7 @@
 				<span>x</span>
 				<div class="clearfix">
 					<div id="icon_tel_box"><img src="images/icons/phone.png" id="img_tel_box"></div>
-					<a href="tel:+5215543688282">5543688282</a>
+					<a href="tel:+5215543688282">55 4368 8282</a>
 				</div>	
 				<p>O escríbenos</p>
 				<button type="button">Correo</button>
@@ -60,7 +68,7 @@
 			</div>
 			<div id="mail">
 				<span>x</span>
-				<p>Hola! Nuestros asesores se pondrán en contacto :)</p>
+				<p>Hola! Muy pronto recibirás una llamada o correo con más información :)</p>
 				<div>
 					<form action="">
 						<input type="text" name="name" value="" placeholder="Nombre" required="">
@@ -70,9 +78,28 @@
 					</form>
 				</div>
 			</div>
+
+			<div id="tel_foot">
+				<span>x</span>
+				<a href="tel:+5215543688282">+511(55)43688282</a>	
+			</div>
+
+			<div id="mail_foot">
+				<span>x</span>
+				<p>Hola! Muy pronto recibirás una llamada o correo con más información :)</p>
+				<div>
+					<form action="">
+						<input type="text" name="name" value="" placeholder="Nombre" required="">
+						<input type="email" name="name" value="" placeholder="Correo" required="">
+						<input type="tel" name="name" value="" placeholder="Número">
+						<input type="submit" name="name" value="Enviar">
+					</form>
+				</div>
+			</div>
+
 			<div id="whatsapp">
 				<span>x</span>
-				<p>Hola! Nuestros asesores se pondrán en contacto :)</p>
+				<p>Hola! En breve nos comunicamos por whatsapp :)</p>
 				<div>
 					<form action="">
 						<input type="text" name="name" value="" placeholder="Nombre" required="">
@@ -82,39 +109,20 @@
 				</div>
 			</div>
 		</div>
+		<div id="recuerdame">
+				<span>x</span>
+				<p>ESTAMOS INICIANDO PREVENTA!! <br><br> Conoce <em>SAMSARA</em> y aprovecha nuestras promociones :)</p>
+				<div>
+					<form action="">
+						<input type="text" name="name" value="" placeholder="Nombre" required="">
+						<input type="email" name="name" value="" placeholder="Correo" required="">
+						<input type="tel" name="name" value="" placeholder="Número">
+						<input type="submit" name="name" value="Enviar">
+					</form>
+				</div>
+		</div>
+		
 
-    	<script type="text/javascript">
-    		$('#phone').click(function(){
-    			$('#box, #tel').show(500);
-    			return false
-    		});
-    		$('#envelope').click(function(){
-    			$('#box, #mail').show(500);
-    			return false
-    		});
-    		$('#box span').click(function(){
-    			$('#box, #mail, #tel').hide(500);
-    		});
-    		$('#tel button').click(function(){
-    			$('#tel').hide(500);
-    			$('#mail').show(500);
-    		});
-    		// $(window).scroll(function(){
-      //   		if ($(this).scrollTop() > 2500) {
-      //     			$('#box, #mail').show(500);
-      //   		}
-      //   		else {
-      //     			$('#box #mail').hide(500);
-      //   		}
-     	// 	});
-      // 		$('#mail span').click(function(){
-      //   		$('#mail').hide(0);
-      //   		function aparece(){
-      //   			$('#mail').show()
-      //   		}
-      //   		setTimeout(aparece,8000);
-      // 		});
-    	</script>
 
 		<div id="section_samsara">
 			<img src="images/logo_samsara.png" alt="logo Samsara" type="imagen desarrollos en Queretaro" id="logo_samsara"></a>
@@ -245,9 +253,16 @@
 			$(document).ready(function() {
 			$(".fancybox").fancybox();
 			});
+			
+			$(".fancybox")
+    		.attr('rel', 'gallery')
+    		.fancybox({
+        		padding : 0
+    		});
+
 			</script>
 		</main>
-
+   
 		<footer>
 			<p>&copy; 2016 BrownFields Desarrollos  | Derechos Reservados.</p>
 			<div id="mobile_footer" class="clearfix">
@@ -256,28 +271,53 @@
 				<a href="#" id="whats"> <img src="images/icons/whatsapp.png" id="icon_whats"></a>
 			</div>
 		</footer>
-
     	<script type="text/javascript">
-    		$('#phone_foot').click(function(){
+    		$('#phone').click(function(){
     			$('#box, #tel').show(500);
     			return false
     		});
-    		$('#envelope_foot').click(function(){
+    		$('#envelope').click(function(){
     			$('#box, #mail').show(500);
+    			return false
+    		});
+
+    		$('#box span').click(function(){
+    			$('#box, #mail, #tel,#mail_foot,#tel_foot, #whatsapp').hide(500);
+    		});
+    		$('#tel button').click(function(){
+    			$('#tel').hide(500);
+    			$('#mail').show(500);
+    		});
+    	
+    		$('#phone_foot').click(function(){
+    			$('#box, #tel_foot').show(500);
+    			return false
+    		});
+    		$('#envelope_foot').click(function(){
+    			$('#box, #mail_foot').show(500);
     			return false
     		});
     		$('#whats').click(function(){
     			$('#box, #whatsapp').show(500);
   				return false
     		});    		
-    		$('#box span').click(function(){
-    			$('#box, #mail, #tel, #whatsapp').hide(500);
-    		});
-    		$('#tel button').click(function(){
-    			$('#tel').hide(500);
-    			$('#mail').show(500);
-    		});
+    		
+			$(window).scroll(function(){
+        		if ($(this).scrollTop() > 2000) {
+          			$('#recuerdame').addClass('holi');
+        		}
+        		else {
+          			$('#recuerdame').removeClass('holi');
+        		}
+     		});
+     		$('#recuerdame span').click(function(){
+     			$('#recuerdame').addClass('bye');
+     		});
 
+      		// $('#burger').click(function(){
+        // 		$('#mobile').toggleClass('menuaparece');
+      		// });
     	</script>
+
 	</body>
 </html>
